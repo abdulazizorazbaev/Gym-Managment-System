@@ -1,0 +1,188 @@
+﻿<Window x:Class="Gym.Desktop.Windows.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gym.Desktop.Windows"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+    
+    <Grid>
+
+        <Border Background="#DF541D"
+                BorderThickness="2">
+
+            <StackPanel Margin="50">
+                
+                <!--Logo GYM-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"
+                           Content="G" 
+                           FontFamily="Arial"
+                           FontSize="50"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="White"/>
+                    <Border Grid.Column="1">
+                        <Image Source="/Assets/Icons/exercise.png"
+                               Height="50"/>
+                    </Border>
+                    <Label Grid.Column="2"
+                           Content="M" 
+                           FontFamily="Arial"
+                           FontSize="50"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Foreground="White"/>
+                </Grid>
+
+                <!--Label Login-->
+                <Label Content="LOG IN" 
+                       HorizontalAlignment="Center"
+                       Foreground="White"
+                       FontSize="20"
+                       FontWeight="SemiBold"
+                       FontFamily="Arial"
+                       Margin="0 20 0 0"/>
+
+                <!--Email TextBox-->
+                <Border Height="40"
+                        BorderThickness="1"
+                        BorderBrush="Gray"
+                        Margin="0 10">
+
+                    <Grid Background="#FAFFBD">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Background="#fff">
+                            <md:PackIcon Kind="user"
+                                         Foreground="#7D838F" 
+                                         Width="24" 
+                                         Height="24" 
+                                         VerticalAlignment="Center"
+                                         HorizontalAlignment="Center"/>
+                        </Border>
+
+                        <TextBox x:Name="tbEmail"
+                                 md:HintAssist.Hint="Email"
+                                 Foreground="Gray"
+                                 Grid.Column="1"
+                                 Margin="5 0"
+                                 FontSize="16"
+                                 VerticalAlignment="Center"
+                                 BorderThickness="0"
+                                 AcceptsReturn="True"
+                                 SpellCheck.IsEnabled="True"
+                                 Language="en-US"/>
+                    </Grid>
+
+                </Border>
+
+                <!--Password PasswordBox-->
+                <Border Height="40"
+                        BorderThickness="1"
+                        BorderBrush="Gray"
+                        Margin="0 5 0 20">
+
+                    <Grid Background="#FAFFBD">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Background="#fff"
+                                MouseDown="Lock_MouseDown_Button">
+
+                            <md:PackIcon Kind="Lock" 
+                                         Foreground="#7D838F" 
+                                         Width="22" 
+                                         Height="22" 
+                                         VerticalAlignment="Center" 
+                                         HorizontalAlignment="Center"
+                                         />
+                        </Border>
+
+                        <PasswordBox x:Name="pbPassword"
+                                     Grid.Column="1"
+                                     md:HintAssist.Hint="Password"
+                                     VerticalAlignment="Center"
+                                     Visibility="Visible"
+                                     Margin="5 0 0 0"
+                                     FontSize="16"
+                                     BorderThickness="0"
+                                     Foreground="Gray"/>
+
+                        <TextBox Visibility="Hidden" 
+                                 Grid.Column="1" 
+                                 x:Name="tbPassword"
+                                 VerticalAlignment="Center"
+                                 Margin="5 0 0 0"
+                                 FontSize="16"
+                                 BorderThickness="0"
+                                 Foreground="Gray"/>
+                    </Grid>
+
+                </Border>
+
+                <!--Checkbox Remember me-->
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" 
+                                Margin="0 5">
+                        <CheckBox Margin="2 5 0 5" 
+                                  FontSize="12"
+                                  x:Name="chbRemember"
+                                  Foreground="#D0D0D0"
+                                  Background="White"
+                                  BorderBrush="Transparent">
+                                  Remember me
+                        </CheckBox>
+
+                    </StackPanel>
+
+                    <Label Content="Forgot password?"
+                           Grid.Column="1"
+                           Margin="0 5"
+                           FontSize="12"
+                           Foreground="#D0D0D0"
+                           HorizontalAlignment="Right"/>
+                </Grid>
+                
+                <!--Button Login-->
+                <Border Height="40"
+                        Background="#F76A02"
+                        Margin="0 15 0 0"
+                        MouseDown="Border_MouseDown">
+
+                    <Label Content="Login"
+                           FontFamily="Arial"
+                           Foreground="White"
+                           FontSize="17"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+                </Border>
+
+            </StackPanel>
+            
+        </Border>
+
+    </Grid>
+    
+</Window>

@@ -1,0 +1,170 @@
+﻿<Window x:Class="Gym.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Gym.Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Height="650"
+        Width="1000"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Header-->
+        <Border Background="{DynamicResource PrimaryBackground}"
+                Grid.Row="0"
+                BorderBrush="{DynamicResource PrimaryBorderColor}"
+                BorderThickness="0 0 0 1">
+            
+            <Grid Margin="10 0 0 0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="105"/>
+                </Grid.ColumnDefinitions>
+                
+                               
+                <!--Logo-->
+                <Border Grid.Column="0"
+                        Background="{DynamicResource PrimaryBackground}"
+                        x:Name="brDrager"
+                        MouseDown="brDrager_MouseDown"
+                        Cursor="ScrollAll">
+                </Border>
+                
+                <!--MaxMinExit Buttons-->
+                <StackPanel Grid.Column="1"
+                            Background="{DynamicResource PrimaryBackground}"
+                            Orientation="Horizontal">
+
+                    <Button x:Name="btnMinimize" Click="btnMinimize_Click" Style="{DynamicResource MinimizeButton}"/>
+                    <Button x:Name="btnMaximize" Click="btnMaximize_Click" Style="{DynamicResource MaximizeButton}"/>
+                    <Button x:Name="btnExit" Click="btnExit_Click" Style="{DynamicResource ExitButton}"/>
+
+                </StackPanel>
+                
+            </Grid>
+            
+        </Border>
+        
+        <!--Main-->
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--SideBar-->
+            <Border Grid.Column="0"
+                    Background="{DynamicResource PrimaryBackground}">
+
+                <Grid Margin="0 20 0 0">
+                    
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>                            
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        
+                        <!--Menu Items-->
+                        <StackPanel Grid.Row="0">
+                            <Border Height="60" 
+                                    Margin="0 20 0 20" 
+                                    HorizontalAlignment="Center">
+                                <Image Source="Assets/Images/logo-icon.png"/>
+                            </Border>
+                            <RadioButton x:Name="rbDashboard"
+                                         Content="Dashboard"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbDashboard_Click"
+                                         Tag="{DynamicResource dashboard-icon}"/>
+                            <RadioButton x:Name="rbPackages"
+                                         Content="Packages"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbPackages_Click"
+                                         Tag="{DynamicResource package-icon}"/>
+                            <RadioButton x:Name="rbMembers"
+                                         Content="Memberships"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbMembers_Click"
+                                         Tag="{DynamicResource member-icon}"/>
+                            <RadioButton x:Name="rbInstructors"
+                                         Content="Instructors"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbInstructors_Click"
+                                         Tag="{DynamicResource instructor-icon}"/>
+                            <RadioButton x:Name="rbClients"
+                                         Content="Clients"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbClients_Click"
+                                         Tag="{DynamicResource client-icon}"/>
+                            <!--<RadioButton x:Name="rbSessions"
+                                         Content="Sessions"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbSessions_Click"
+                                         Tag="{DynamicResource session-icon}"/>-->
+                            <!--<RadioButton x:Name="rbAttendance"
+                                         Content="Attendance"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbAttendance_Click"
+                                         Tag="{DynamicResource attendance-icon}"/>-->
+                            <RadioButton x:Name="rbPayments"
+                                         Content="Payments"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbPayments_Click"
+                                         Tag="{DynamicResource payment-icon}"/>
+                            <RadioButton x:Name="rbFAQ"
+                                         Content="FAQ"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbFAQ_Click"
+                                         Tag="{DynamicResource faq-icon}"/>
+                            <RadioButton x:Name="rbAbout"
+                                         Content="About"
+                                         Style="{DynamicResource MenuButton}"
+                                         Click="rbAbout_Click"
+                                         Tag="{DynamicResource about-icon}"/>
+                        </StackPanel>
+                        
+                        <!--SwitcherTheme-->
+                        <Border Grid.Row="1"
+                                HorizontalAlignment="Left"
+                                Margin="20 0 0 0">
+                            <CheckBox x:Name="switcherTheme"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Style="{DynamicResource SwitchThemeButton}">
+                            </CheckBox>
+                        </Border>
+                        
+                    </Grid>
+                </Grid>
+
+
+            </Border>
+            
+            <!--Pagination-->
+            <Border Background="{DynamicResource SecondaryBackground}"
+                    Grid.Column="1">
+                <Frame x:Name="PageNavigator"
+                       NavigationUIVisibility="Hidden"/>
+
+            </Border>
+            
+        </Grid>
+        
+    </Grid>
+    
+</Window>

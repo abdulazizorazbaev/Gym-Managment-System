@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Components\Instructors\InstructorViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Packages\PackageChipUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Packages\PackageViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AboutPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AttendancePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ClientsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\DashboardPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\FAQPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\InstructorsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MembersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PackagesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PaymentsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SessionsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Instructors\InstructorAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Members\MemberAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Packages\PackageAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Icons\Icons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Instructors\InstructorViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Packages\PackageChipUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Packages\PackageViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AboutPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AttendancePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ClientsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\DashboardPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\FAQPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\InstructorsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MembersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PackagesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PaymentsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SessionsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\DatePickerStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\LightTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Instructors\InstructorAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Members\MemberAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Packages\PackageAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

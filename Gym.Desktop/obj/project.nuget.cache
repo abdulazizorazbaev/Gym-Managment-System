@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jg0pJatmXwx/3LgPV8Hl30nrQMjYkWuCFd6x5i7xUJ5xzwXVagW7hS37u13WD0gNl6YOnnYdANtpmWj5hCY6EA==",
+  "success": true,
+  "projectFilePath": "D:\\Gym.Desktop\\Gym.Desktop\\Gym.Desktop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hp Victus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Hp Victus\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\Hp Victus\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\Hp Victus\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Hp Victus\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\Hp Victus\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Icons\exercise.png" />
+    <None Remove="Assets\Images\logo-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Logos\" />
+    <Folder Include="Assets\Sounds\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Npgsql" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Icons\exercise.png" />
+    <Resource Include="Assets\Images\logo-icon.png" />
+  </ItemGroup>
+
+</Project>

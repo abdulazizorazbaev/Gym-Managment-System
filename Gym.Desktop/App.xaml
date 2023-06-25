@@ -1,0 +1,29 @@
+﻿<Application x:Class="Gym.Desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Gym.Desktop"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                
+                <!--Material Design-->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Cyan.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                
+                <!--Themes-->
+                <ResourceDictionary Source="/Themes/DarkTheme.xaml"/>
+
+                <!--Icons-->
+                <ResourceDictionary Source="/Assets/Icons/Icons.xaml"/>
+             
+                <!--Styles-->
+                <ResourceDictionary Source="/Styles/ButtonStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/DatePickerStyles.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

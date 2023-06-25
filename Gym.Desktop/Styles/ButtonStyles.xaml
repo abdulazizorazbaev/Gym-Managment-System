@@ -1,0 +1,365 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+    
+    <!--Control Buttons-->
+    
+    <!--MinimizeButton-->
+    <Style x:Key="MinimizeButton" 
+           TargetType="{x:Type Button}">
+        
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="35"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="A"
+                            Background="{DynamicResource PrimaryBackground}">
+                        <Path Data="{DynamicResource minus}"
+                              Fill="#fff"
+                              Stretch="UniformToFill"
+                              Height="2"
+                              Width="10"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="A" Property="Background" Value="#4D4D4D"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter TargetName="A" Property="Background" Value="{DynamicResource PrimaryBackground}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="A" Property="Background" Value="#444444"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        
+    </Style>
+
+    <!--MaximizeButton-->
+    <Style x:Key="MaximizeButton"
+           TargetType="{x:Type Button}">
+
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="35"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="A"
+                            Background="{DynamicResource PrimaryBackground}">
+                        <Path Data="{DynamicResource border}"
+                              Fill="#fff"
+                              Stretch="UniformToFill"
+                              Height="11"
+                              Width="11"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="A" Property="Background" Value="#4D4D4D"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter TargetName="A" Property="Background" Value="{DynamicResource PrimaryBackground}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="A" Property="Background" Value="#444444"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <!--ExitButton-->
+    <Style x:Key="ExitButton" 
+           TargetType="{x:Type Button}">
+
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="35"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="A"
+                            Background="{DynamicResource PrimaryBackground}">
+                        <Path Data="{DynamicResource x}"
+                              Fill="#fff"
+                              Stretch="UniformToFill"
+                              Height="10"
+                              Width="10"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="A" Property="Background" Value="#4D4D4D"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter TargetName="A" Property="Background" Value="{DynamicResource PrimaryBackground}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="A" Property="Background" Value="#444444"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <!--Menu Buttons-->
+    <Style x:Key="MenuButton"
+           TargetType="{x:Type RadioButton}">
+
+        <Setter Property="Height" Value="45"/>
+        <Setter Property="Width" Value="250"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamily" Value="Cascadia Mono"/>
+        <Setter Property="Margin" Value="0 2 0 2"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RadioButton}">
+
+                    <Border x:Name="R">
+
+                        <Grid>
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border x:Name="Indicator"
+                                    Grid.Column="0"
+                                    Visibility="Collapsed"
+                                    Background="#02ACC3"
+                                    Height="45"/>
+                            <Path Data="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}}"
+                                  Grid.Column="1"
+                                  x:Name="icon"
+                                  Fill="{DynamicResource PrimaryIconColor}"
+                                  Stretch="Uniform"
+                                  Height="23" Width="23"/>
+                            <TextBlock Grid.Column="2"
+                                       x:Name="textBlock"
+                                       Foreground="{DynamicResource PrimaryTextColor}"
+                                       FontWeight="SemiBold"
+                                       VerticalAlignment="Center"
+                                       FontSize="{TemplateBinding FontSize}"
+                                       Text="{TemplateBinding Content}"/>
+
+                        </Grid>
+                        <!--<Border.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="Width"
+                                                         From="200" To="250"
+                                                         Duration="0:0:0.5"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Border.Triggers>-->
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Background" Value="Transparent" TargetName="R"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="textBlock" Property="Margin" Value="15 0 0 0"/>
+                            <Setter TargetName="icon" Property="Margin" Value="15 0 0 0"/>
+                            <Setter Property="Background" Value="{DynamicResource PrimaryBorderColor}" TargetName="R"/>
+                            <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}" TargetName="textBlock"/>
+                            <Setter TargetName="icon" Property="Fill" Value="{DynamicResource PrimaryIconColor}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="Indicator"/>
+                            <Setter TargetName="textBlock" Property="Margin" Value="15 0 0 0"/>
+                            <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}" TargetName="textBlock"/>
+                            <Setter Property="Background" Value="{DynamicResource PrimaryBorderColor}" TargetName="R"/>
+                            <Setter TargetName="icon" Property="Fill" Value="{DynamicResource PrimaryIconColor}"/>
+                            <Setter TargetName="icon" Property="Margin" Value="15 0 0 0"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    
+    <!--Switch Theme Button-->
+    <Style x:Key="SwitchThemeButton"
+           TargetType="{x:Type CheckBox}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <StackPanel>
+                        <Grid>
+                            <Border Width="30"
+                                    Height="17"
+                                    Background="LightBlue"
+                                    CornerRadius="10"
+                                    Margin="5 0"/>
+                            <Border x:Name="Button"
+                                    Height="19"
+                                    Width="19"
+                                    CornerRadius="12"
+                                    HorizontalAlignment="Left">
+                                <md:PackIcon Kind="MoonNew"
+                                             Foreground="#02ACC3" 
+                                             Width="22" 
+                                             Height="22" 
+                                             VerticalAlignment="Center"
+                                             HorizontalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <ContentPresenter x:Name="Content"
+                                          Margin="10 0 0 0"
+                                          Content="{TemplateBinding Content}"
+                                          VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </StackPanel>
+                    
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="Right">
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin"
+                                                Storyboard.TargetName="Button"
+                                                Duration="0:0:0:0.5"
+                                                From="0 0 0 0"
+                                                To="21 0 0 0">
+                                <ThicknessAnimation.EasingFunction>
+                                    <CircleEase EasingMode="EaseOut">                                        
+                                    </CircleEase>
+                                </ThicknessAnimation.EasingFunction>
+                            </ThicknessAnimation>
+                        </Storyboard>
+                        <Storyboard x:Key="Left">
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin"
+                                                Storyboard.TargetName="Button"
+                                                Duration="0:0:0:0.5"
+                                                From="21 0 0 0"
+                                                To="0 0 0 0">
+                                <ThicknessAnimation.EasingFunction>
+                                    <CircleEase EasingMode="EaseOut">
+
+                                    </CircleEase>
+                                </ThicknessAnimation.EasingFunction>
+                            </ThicknessAnimation>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Trigger.ExitActions>
+                                <RemoveStoryboard BeginStoryboardName="Left">
+                                    
+                                </RemoveStoryboard>
+                                <BeginStoryboard Storyboard="{StaticResource Right}" x:Name="Right">
+                                    
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                            <Setter TargetName="Button" Property="Background" Value="#1C212B"/> 
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Trigger.ExitActions>
+                                <RemoveStoryboard BeginStoryboardName="Right">
+                                </RemoveStoryboard>
+                                <BeginStoryboard Storyboard="{StaticResource Left}" x:Name="Left">
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                            <Setter TargetName="Button" Property="Background" Value="#fff9f4f4"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    
+    <!--AddButton Packages-->
+    <Style x:Key="AddButton" TargetType="{x:Type Button}">
+        <Setter Property="Margin" Value="10 0 0 0"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    
+                    <Border x:Name="B" Background="#4AA951" Padding="7 0">
+                        <Label FontSize="16"
+                               FontFamily="Cascadia Mono"
+                               FontWeight="SemiBold"
+                               Foreground="#FFF"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Content="{TemplateBinding Content}"/>
+
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#449A49" TargetName="B"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Background" Value="#4AA951" TargetName="B"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#3A853F" TargetName="B"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        
+    </Style>
+
+    <!--SaveButton Packages-->
+    <Style x:Key="SaveButton" TargetType="{x:Type Button}">
+        <Setter Property="Margin" Value="10 0 10 0"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+
+                    <Border x:Name="B" Background="#4AA951" Padding="7 0">
+                        <Label FontSize="16"
+                               FontFamily="Cascadia Mono"
+                               FontWeight="SemiBold"
+                               Foreground="#FFF"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Content="{TemplateBinding Content}"/>
+
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#449A49" TargetName="B"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Background" Value="#4AA951" TargetName="B"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#3A853F" TargetName="B"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <!--ComboBox-->
+    
+
+</ResourceDictionary>

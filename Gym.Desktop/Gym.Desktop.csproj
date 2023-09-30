@@ -9,7 +9,12 @@
 
   <ItemGroup>
     <None Remove="Assets\Icons\exercise.png" />
+    <None Remove="Assets\Images\backAbout_img.jpg" />
+    <None Remove="Assets\Images\facebook.png" />
+    <None Remove="Assets\Images\instagram.png" />
     <None Remove="Assets\Images\logo-icon.png" />
+    <None Remove="Assets\Images\telegram.png" />
+    <None Remove="Assets\Images\whatsapp.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,7 +31,12 @@
 
   <ItemGroup>
     <Resource Include="Assets\Icons\exercise.png" />
+    <Resource Include="Assets\Images\backAbout_img.jpg" />
+    <Resource Include="Assets\Images\facebook.png" />
+    <Resource Include="Assets\Images\instagram.png" />
     <Resource Include="Assets\Images\logo-icon.png" />
+    <Resource Include="Assets\Images\telegram.png" />
+    <Resource Include="Assets\Images\whatsapp.png" />
   </ItemGroup>
 
 </Project>

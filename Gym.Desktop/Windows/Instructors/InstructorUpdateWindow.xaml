@@ -1,0 +1,404 @@
+﻿<Window x:Class="Gym.Desktop.Windows.Instructors.InstructorUpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gym.Desktop.Windows.Instructors"
+        mc:Ignorable="d"
+        Title="Update Exist Instructor" Height="740" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="TitleLabel" TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0 5"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="{DynamicResource PrimaryDialogBackground}">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Header Dialog-->
+            <Grid Grid.Row="0"
+                  Background="{DynamicResource PrimaryBackground}">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+
+
+                <!--Logo-->
+                <Border Grid.Column="0"
+                        Background="{DynamicResource PrimaryBackground}"
+                        x:Name="brInstructorAddDrager"
+                        MouseDown="brInstructorUpdateDrager_MouseDown"
+                        Cursor="ScrollAll">
+                </Border>
+
+                <!--Exit Button-->
+                <StackPanel Grid.Column="1"
+                            Background="{DynamicResource PrimaryBackground}"
+                            HorizontalAlignment="Right">
+
+                    <Button x:Name="btnInstructorUpdateExit" 
+                            Click="btnInstructorUpdateExit_Click"
+                            Style="{DynamicResource ExitButton}"/>
+
+                </StackPanel>
+
+            </Grid>
+
+            <StackPanel Orientation="Vertical"
+                        Margin="20"
+                        Grid.Row="1">
+
+                <!--Image and FirstName and LastName-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!--Iamge-->
+                    <StackPanel Grid.Column="0" Margin="0 0 0 10">
+                        <Label Content="Image"
+                                   Style="{DynamicResource TitleLabel}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Border x:Name="ImgPackageImage"
+                                        Height="110" Width="110"
+                                        BorderThickness="1"
+                                        Margin="5 0 0 0"
+                                        BorderBrush="LightGray">
+                                <Border.Background>
+                                    <ImageBrush x:Name="ImbBImage"/>
+                                </Border.Background>
+                            </Border>
+                            <Button x:Name="btnImageSelector" 
+                                        Content="..."
+                                        Click="btnImageSelector_Click"
+                                        Margin="8 0 0 0"
+                                        VerticalAlignment="Bottom"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--FirstName and LastName-->
+                    <StackPanel Grid.Column="2">
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <!--FirstName-->
+                            <StackPanel Grid.Row="0">
+
+                                <Label Content="First Name"
+                                       Style="{DynamicResource TitleLabel}"/>
+                                <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                        Height="40">
+                                    <!--FirstName TextBox-->
+                                    <TextBox x:Name="tbFirstName"
+                                             MaxLength="30"
+                                             VerticalAlignment="Center"
+                                             Padding="5"
+                                             FontSize="16"
+                                             FontFamily="Cascadia Mono"
+                                             BorderThickness="0"
+                                             Foreground="{DynamicResource PrimaryTextColor}"
+                                             Background="{DynamicResource PrimaryBackground}"/>
+                                </Border>
+
+                            </StackPanel>
+
+                            <!--LastName-->
+                            <StackPanel Grid.Row="1">
+
+                                <Label Content="Last Name"
+                                       Style="{DynamicResource TitleLabel}"/>
+                                <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                        Height="40">
+                                    <!--FirstName TextBox-->
+                                    <TextBox x:Name="tbLastName"
+                                             MaxLength="30"
+                                             VerticalAlignment="Center"
+                                             Padding="5"
+                                             FontSize="16"
+                                             FontFamily="Cascadia Mono"
+                                             BorderThickness="0"
+                                             Foreground="{DynamicResource PrimaryTextColor}"
+                                             Background="{DynamicResource PrimaryBackground}"/>
+                                </Border>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                    </StackPanel>
+
+                </Grid>
+
+                <!--Date of Birth and Gender-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!--Start Date-->
+                    <StackPanel Grid.Column="0">
+                        <Label Content="Date of Birth"
+                               Style="{DynamicResource TitleLabel}"/>
+                        <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                    Height="40">
+                            <DatePicker x:Name="dtpDateOfBirth"
+                                            Style="{DynamicResource FormDatePicker}"/>
+                        </Border>
+                    </StackPanel>
+
+                    <!--Gender-->
+                    <StackPanel Grid.Column="2">
+                        <Label Content="Gender" Style="{DynamicResource TitleLabel}"/>
+                        <Grid Width="180" HorizontalAlignment="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton Grid.Column="0" 
+                                         x:Name="rbMale"
+                                         Content="Male"
+                                         IsChecked="True"
+                                         FontSize="16"
+                                         Cursor="Hand"
+                                         VerticalContentAlignment="Center"
+                                         Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <RadioButton Grid.Column="1"
+                                         x:Name="rbFemale"
+                                         Content="Female"
+                                         Cursor="Hand"
+                                         FontSize="16"
+                                         VerticalContentAlignment="Center"
+                                         Foreground="{DynamicResource PrimaryTextColor}"/>
+                        </Grid>
+                    </StackPanel>
+
+                </Grid>
+
+                <!--Email and PhoneNumber-->
+                <StackPanel>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Email-->
+                        <StackPanel Grid.Column="0">
+
+                            <Label Content="Email"
+                                       Style="{DynamicResource TitleLabel}"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                        Height="40">
+                                <!--Email TextBox-->
+                                <TextBox x:Name="tbEmail"
+                                             MaxLength="50"
+                                             VerticalAlignment="Center"
+                                             Padding="5"
+                                             FontSize="16"
+                                             FontFamily="Cascadia Mono"
+                                             BorderThickness="0"
+                                             Foreground="{DynamicResource PrimaryTextColor}"
+                                             Background="{DynamicResource PrimaryBackground}"/>
+                            </Border>
+
+                        </StackPanel>
+
+                        <!--PhoneNumber-->
+                        <StackPanel Grid.Column="2">
+
+                            <Label Content="Phone Number"
+                                   Style="{DynamicResource TitleLabel}"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                    Height="40"
+                                    Padding="5">
+                                <!--PhoneNumber TextBox-->
+                                <Grid 
+                                      Background="{DynamicResource PrimaryBackground}">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="60"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Border VerticalAlignment="Center"
+                                                BorderThickness="0 0 1 0"
+                                                BorderBrush="Gray">
+                                            <Label Content="+998"
+                                                   x:Name="lbPhoneTemp"
+                                                   Margin="10 0 0 0"
+                                                   Width="55"
+                                                   Grid.Column="0"
+                                                   Foreground="{DynamicResource PrimaryTextColor}"
+                                                   FontSize="16"
+                                                   FontFamily="Cascadia Mono"/>
+                                        </Border>
+                                        <TextBox x:Name="tbPhoneNumber"
+                                                 PreviewTextInput="tbPhoneNumber_PreviewTextInput"
+                                                 Grid.Column="1"
+                                                 MaxLength="9"
+                                                 VerticalAlignment="Center"
+                                                 Padding="5"
+                                                 FontSize="16"
+                                                 FontFamily="Cascadia Mono"
+                                                 BorderThickness="0"
+                                                 Foreground="{DynamicResource PrimaryTextColor}"
+                                                 Background="{DynamicResource PrimaryBackground}"/>
+                                    </Grid>
+
+                                </Grid>
+
+                            </Border>
+
+                        </StackPanel>
+
+                    </Grid>
+
+                </StackPanel>
+
+                <!--Title and Salary-->
+                <StackPanel>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Title-->
+                        <StackPanel Grid.Column="0">
+
+                            <Label Content="Title"
+                                       Style="{DynamicResource TitleLabel}"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                        Height="40">
+                                <!--Title TextBox-->
+                                <TextBox x:Name="tbTitle"
+                                             MaxLength="100"
+                                             VerticalAlignment="Center"
+                                             Padding="5"
+                                             FontSize="16"
+                                             FontFamily="Cascadia Mono"
+                                             BorderThickness="0"
+                                             Foreground="{DynamicResource PrimaryTextColor}"
+                                             Background="{DynamicResource PrimaryBackground}"/>
+                            </Border>
+
+                        </StackPanel>
+
+                        <!--Salary-->
+                        <StackPanel Grid.Column="2">
+
+                            <Label Content="Salary"
+                                   Style="{DynamicResource TitleLabel}"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                    Height="40"
+                                    Padding="5">
+                                <!--Salary TextBox-->
+                                <TextBox x:Name="tbSalary"
+                                         PreviewTextInput="tbSalary_PreviewTextInput"
+                                         Grid.Column="1"
+                                         MaxLength="7"
+                                         VerticalAlignment="Center"
+                                         Padding="5"
+                                         FontSize="16"
+                                         FontFamily="Cascadia Mono"
+                                         BorderThickness="0"
+                                         Foreground="{DynamicResource PrimaryTextColor}"
+                                         Background="{DynamicResource PrimaryBackground}"/>
+
+                            </Border>
+
+                        </StackPanel>
+
+                    </Grid>
+
+                </StackPanel>
+
+                <!--Package Name List From Packages-->
+                <StackPanel>
+
+                    <Label Content="Package"
+                           Style="{DynamicResource TitleLabel}"/>
+                    <Border Background="{DynamicResource PrimaryComboBoxBackground}"
+                            Height="30">
+                        <ComboBox x:Name="cmbPackageList"
+                                  FontFamily="Cascadia Mono"
+                                  FontSize="16"
+                                  FontWeight="SemiBold"
+                                  Padding="10 5"
+                                  Text="Please select ..."
+                                  IsEditable="True" 
+                                  IsReadOnly="True"
+                                  Foreground="Gray"
+                                  DisplayMemberPath="PackageName"
+                                  SelectedValuePath="Id">
+                        </ComboBox>
+                    </Border>
+
+                </StackPanel>
+
+                <!--Description-->
+                <Label Content="Description"
+                       Style="{DynamicResource TitleLabel}"/>
+                <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                        Height="100">
+
+                    <!--Description RichTextBox-->
+                    <RichTextBox x:Name="rbDescription"
+                                 Padding="10"
+                                 FontSize="16"
+                                 FontFamily="Cascadia Mono"
+                                 BorderThickness="0"
+                                 Foreground="{DynamicResource PrimaryTextColor}"
+                                 Background="{DynamicResource PrimaryBackground}"
+                                 GotFocus="RichTextBox_GotFocus">
+                        <RichTextBox.Document>
+                            <FlowDocument>
+                                <FlowDocument.Blocks>
+                                    <Paragraph Foreground="Gray">
+                                        Type here something...
+                                    </Paragraph>
+                                </FlowDocument.Blocks>
+                            </FlowDocument>
+                        </RichTextBox.Document>
+                    </RichTextBox>
+
+                </Border>
+
+                <!--Save Button-->
+                <Button Content="Update"
+                        x:Name="btnSave"
+                        Margin="0 20 0 10"
+                        Click="btnUpdate_Click"/>
+
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Window>

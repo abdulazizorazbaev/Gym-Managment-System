@@ -67,3 +67,191 @@ D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\ob
 D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageChipUserControl.baml
 D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Instructors\InstructorViewUserControl.g.cs
 D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Instructors\InstructorViewUserControl.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.csproj.AssemblyReference.cache
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Assets\Icons\Icons.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Styles\ComboBoxStyles.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Styles\DatePickerStyles.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Themes\DarkTheme.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Themes\LightTheme.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberAddWindow.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Instructors\InstructorViewUserControl.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageChipUserControl.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageViewUserControl.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AboutPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AttendancePage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\ClientsPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\DashboardPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\FAQPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\InstructorsPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\MembersPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PackagesPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PaymentsPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\SessionsPage.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorAddWindow.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\LoginWindow.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberAddWindow.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageAddWindow.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\App.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop_MarkupCompile.cache
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop_MarkupCompile.lref
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.dll
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\refint\Gym.Desktop.dll
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.pdb
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.exe
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.deps.json
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.runtimeconfig.json
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.dll
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.pdb
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\BCrypt.Net-Next.dll
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Npgsql.dll
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\App.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Instructors\InstructorViewUserControl.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageChipUserControl.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageViewUserControl.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\MainWindow.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AboutPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AttendancePage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\ClientsPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\DashboardPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\FAQPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\InstructorsPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\MembersPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PackagesPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PaymentsPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\SessionsPage.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorAddWindow.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\LoginWindow.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageAddWindow.baml
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.g.resources
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.AssemblyInfoInputs.cache
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.AssemblyInfo.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.csproj.CoreCompileInputs.cache
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.csproj.CopyComplete
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.genruntimeconfig.cache
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\ref\Gym.Desktop.dll
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorUpdateWindow.g.cs
+D:\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientAddWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientAddWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Clients\ClientViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Clients\ClientViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Memberships\MembershipViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Memberships\MembershipViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\DashboardViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\DashboardViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard2ViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard2ViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard3ViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard3ViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\FAQ\FAQViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\FAQ\FAQViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Payments\PaymentViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Payments\PaymentViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.exe
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.deps.json
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.runtimeconfig.json
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Gym.Desktop.pdb
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\BCrypt.Net-Next.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\bin\Debug\net7.0-windows\Npgsql.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.csproj.AssemblyReference.cache
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Assets\Icons\Icons.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Clients\ClientViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard2ViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard3ViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\DashboardViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\FAQ\FAQViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Memberships\MembershipViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\MainWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AboutPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\DashboardPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\FAQPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\MembersPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Styles\ComboBoxStyles.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Styles\DatePickerStyles.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Themes\DarkTheme.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Themes\LightTheme.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberAddWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Clients\ClientViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard2ViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\Dashboard3ViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Dashboard\DashboardViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\FAQ\FAQViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Instructors\InstructorViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Memberships\MembershipViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageChipUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Payments\PaymentViewUserControl.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AboutPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AttendancePage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\ClientsPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\DashboardPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\FAQPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\InstructorsPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\MembersPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PackagesPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PaymentsPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\SessionsPage.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientAddWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorAddWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\LoginWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberAddWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageAddWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageUpdateWindow.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\App.g.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop_MarkupCompile.cache
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop_MarkupCompile.lref
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\App.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Instructors\InstructorViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Packages\PackageChipUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Components\Payments\PaymentViewUserControl.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\AttendancePage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\ClientsPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\InstructorsPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PackagesPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\PaymentsPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Pages\SessionsPage.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientAddWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Clients\ClientUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorAddWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Instructors\InstructorUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\LoginWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Members\MemberUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageAddWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Windows\Packages\PackageUpdateWindow.baml
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.g.resources
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.AssemblyInfoInputs.cache
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.AssemblyInfo.cs
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.csproj.CoreCompileInputs.cache
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.csproj.CopyComplete
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\refint\Gym.Desktop.dll
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.pdb
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\Gym.Desktop.genruntimeconfig.cache
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\ref\Gym.Desktop.dll

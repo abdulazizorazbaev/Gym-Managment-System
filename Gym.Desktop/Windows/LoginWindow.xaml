@@ -6,11 +6,12 @@
         xmlns:local="clr-namespace:Gym.Desktop.Windows"
         mc:Ignorable="d"
         Title="LoginWindow" Height="450" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
-        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        >
     
     <Grid>
 
-        <Border Background="#DF541D"
+        <Border Background="{DynamicResource PrimaryBackground}"
                 BorderThickness="2">
 
             <StackPanel Margin="50">
@@ -67,7 +68,7 @@
                         <Border Grid.Column="0"
                                 Background="#fff">
                             <md:PackIcon Kind="user"
-                                         Foreground="#7D838F" 
+                                         Foreground="{DynamicResource PrimaryIconColor}" 
                                          Width="24" 
                                          Height="24" 
                                          VerticalAlignment="Center"
@@ -106,7 +107,7 @@
                                 MouseDown="Lock_MouseDown_Button">
 
                             <md:PackIcon Kind="Lock" 
-                                         Foreground="#7D838F" 
+                                         Foreground="{DynamicResource PrimaryIconColor}" 
                                          Width="22" 
                                          Height="22" 
                                          VerticalAlignment="Center" 
@@ -150,7 +151,7 @@
                                   FontSize="12"
                                   x:Name="chbRemember"
                                   Foreground="#D0D0D0"
-                                  Background="White"
+                                  Background="{DynamicResource PrimaryTextColor}"
                                   BorderBrush="Transparent">
                                   Remember me
                         </CheckBox>
@@ -161,19 +162,20 @@
                            Grid.Column="1"
                            Margin="0 5"
                            FontSize="12"
-                           Foreground="#D0D0D0"
+                           Foreground="{DynamicResource PrimaryTextColor}"
                            HorizontalAlignment="Right"/>
                 </Grid>
                 
                 <!--Button Login-->
                 <Border Height="40"
-                        Background="#F76A02"
+                        Background="{DynamicResource PrimaryIconColor}"
                         Margin="0 15 0 0"
-                        MouseDown="Border_MouseDown">
+                        MouseDown="Border_MouseDown"
+                        Cursor="Hand">
 
                     <Label Content="Login"
                            FontFamily="Arial"
-                           Foreground="White"
+                           Foreground="{DynamicResource PrimaryTextColor}"
                            FontSize="17"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"/>

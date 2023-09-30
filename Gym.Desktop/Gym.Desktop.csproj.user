@@ -7,13 +7,34 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\Clients\ClientViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Dashboard\Dashboard2ViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Dashboard\Dashboard3ViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Dashboard\DashboardViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\FAQ\FAQViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\Instructors\InstructorViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Memberships\MembershipViewUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\Packages\PackageChipUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\Packages\PackageViewUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Payments\PaymentViewUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\AboutPage.xaml.cs">
@@ -46,7 +67,16 @@
     <Compile Update="Pages\SessionsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\Clients\ClientAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Clients\ClientUpdateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\Instructors\InstructorAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Instructors\InstructorUpdateWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\LoginWindow.xaml.cs">
@@ -55,7 +85,13 @@
     <Compile Update="Windows\Members\MemberAddWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\Members\MemberUpdateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\Packages\PackageAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Packages\PackageUpdateWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -63,13 +99,34 @@
     <Page Update="Assets\Icons\Icons.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\Clients\ClientViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Dashboard\Dashboard2ViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Dashboard\Dashboard3ViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Dashboard\DashboardViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\FAQ\FAQViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\Instructors\InstructorViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Memberships\MembershipViewUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\Packages\PackageChipUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\Packages\PackageViewUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Payments\PaymentViewUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
@@ -117,7 +174,16 @@
     <Page Update="Themes\LightTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Windows\Clients\ClientAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Clients\ClientUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Windows\Instructors\InstructorAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Instructors\InstructorUpdateWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\LoginWindow.xaml">
@@ -126,7 +192,13 @@
     <Page Update="Windows\Members\MemberAddWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Windows\Members\MemberUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Windows\Packages\PackageAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Packages\PackageUpdateWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

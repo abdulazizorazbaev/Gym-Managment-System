@@ -11,7 +11,7 @@ public sealed class Membership : Auditable
 
     public long InstructorId { get; set; }
 
-    public MembershipStatus MembershipStatus { get; set; }
+    public string MembershipStatus { get; set; } = String.Empty;
 
     public DateOnly StartDate { get; set; }
 

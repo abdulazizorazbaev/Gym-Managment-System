@@ -61,7 +61,7 @@
             <StackPanel Orientation="Vertical"
                         Margin="20"
                         Grid.Row="1">
-                
+
                 <!--Image and FirstName and LastName-->
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -92,7 +92,7 @@
                         </StackPanel>
 
                     </StackPanel>
-                    
+
                     <!--FirstName and LastName-->
                     <StackPanel Grid.Column="2">
 
@@ -101,7 +101,7 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            
+
                             <!--FirstName-->
                             <StackPanel Grid.Row="0">
 
@@ -145,11 +145,11 @@
                             </StackPanel>
 
                         </Grid>
-                        
+
                     </StackPanel>
 
                 </Grid>
-                
+
                 <!--Date of Birth and Gender-->
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -196,7 +196,7 @@
                     </StackPanel>
 
                 </Grid>
-                
+
                 <!--Email and PhoneNumber-->
                 <StackPanel>
 
@@ -268,19 +268,19 @@
                                                  Foreground="{DynamicResource PrimaryTextColor}"
                                                  Background="{DynamicResource PrimaryBackground}"/>
                                     </Grid>
-                                    
+
                                 </Grid>
 
                             </Border>
 
                         </StackPanel>
-                        
-                        
+
+
 
                     </Grid>
 
                 </StackPanel>
-                
+
                 <!--Title and Salary-->
                 <StackPanel>
 
@@ -340,7 +340,7 @@
                     </Grid>
 
                 </StackPanel>
-                
+
                 <!--Package Name List From Packages-->
                 <StackPanel>
 

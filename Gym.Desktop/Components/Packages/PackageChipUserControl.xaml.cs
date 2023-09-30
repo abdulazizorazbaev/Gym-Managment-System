@@ -21,6 +21,10 @@ namespace Gym.Desktop.Components.Packages
     /// </summary>
     public partial class PackageChipUserControl : UserControl
     {
+        public Func<long, Task> Refresh { get; set; }
+
+        private Package package = new Package();
+        
         public PackageChipUserControl()
         {
             InitializeComponent();
@@ -28,13 +32,14 @@ namespace Gym.Desktop.Components.Packages
 
         public void SetData(Package package)
         {
+            this.package = package;
             string[] strPackage = package.PackageName.Split(' ');
             lbPackage.Content = strPackage[0];
         }
 
-        private void UserControl_MouseDown(object sender, MouseButtonEventArgs e)
+        private async void UserControl_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Hello World!");
+            await Refresh(package.Id);
         }
     }
 }

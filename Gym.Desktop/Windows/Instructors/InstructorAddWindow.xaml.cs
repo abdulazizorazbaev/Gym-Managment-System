@@ -1,5 +1,6 @@
 ﻿using Gym.Desktop.Constants;
 using Gym.Desktop.Entities.Instructors;
+using Gym.Desktop.Entities.Memberships;
 using Gym.Desktop.Helpers;
 using Gym.Desktop.Interfaces.Instructors;
 using Gym.Desktop.Interfaces.Packages;
@@ -54,6 +55,7 @@ namespace Gym.Desktop.Windows.Instructors
         {
             Instructor instructor = new Instructor();
 
+            instructor.PackageId = (long)cmbPackageList.SelectedValue;
             instructor.FirstName = tbFirstName.Text;
             instructor.LastName = tbLastName.Text;
             instructor.Email = tbEmail.Text;

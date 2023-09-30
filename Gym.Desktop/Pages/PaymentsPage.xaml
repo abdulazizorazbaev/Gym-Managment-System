@@ -6,9 +6,165 @@
       xmlns:local="clr-namespace:Gym.Desktop.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PaymentsPage">
+      Title="PaymentsPage"
+      Loaded="Page_Loaded">
+    <Border Background="{DynamicResource SecondaryBackground}"
+            Padding="10">
 
-    <Grid>
-        <Label FontSize="50" Content="Payments"/>
-    </Grid>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Search and Add-->
+            <Grid Grid.Row="0"
+                  Margin="0 5 0 10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                        Width="300"
+                        Height="40"
+                        Grid.Column="0"
+                        HorizontalAlignment="Left">
+
+                    <!--Search TextBox-->
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Path Grid.Column="0"
+                              Fill="{DynamicResource PrimaryTextColor}"
+                              Data="{DynamicResource search-icon}"
+                              Width="20" Height="23"/>
+                        <TextBox x:Name="tbSearch"
+                                 Grid.Column="1"
+                                 Padding="5"
+                                 VerticalAlignment="Center"
+                                 FontSize="16"
+                                 FontFamily="Cascadia Mono"
+                                 BorderThickness="0"
+                                 Foreground="{DynamicResource PrimaryTextColor}"
+                                 Background="{DynamicResource PrimaryBackground}"
+                                 Margin="0 0 10 0"
+                                 KeyDown="OnKeyDownHandler"/>
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+            <!--DataGridView-->
+            <Grid Grid.Row="1"
+                  Margin="0 0 17 0">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="2.5*"/>
+                        <ColumnDefinition Width="2.5*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <!--ID-->
+                    <Border Grid.Column="0"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbId"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="ID"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--Client-->
+                    <Border Grid.Column="1"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbClient"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="Client"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--PaymentType-->
+                    <Border Grid.Column="2"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbPaymentType"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="Payment type"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--CreatedAt-->
+                    <Border Grid.Column="3"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbCreatedAt"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="Created at"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--UpdatedAt-->
+                    <Border Grid.Column="4"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbGUpdatedAt"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="Updated at"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                </Grid>
+
+            </Grid>
+
+            <ScrollViewer Grid.Row="2">
+                <StackPanel x:Name="wrpPayments">
+
+                </StackPanel>
+            </ScrollViewer>
+
+        </Grid>
+
+    </Border>
 </Page>

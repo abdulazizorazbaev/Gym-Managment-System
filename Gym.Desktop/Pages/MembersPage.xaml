@@ -1,14 +1,13 @@
 ﻿<Page x:Class="Gym.Desktop.Pages.MembersPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Gym.Desktop.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MembersPage"
       Loaded="Page_Loaded">
-
+    
     <Border Background="{DynamicResource SecondaryBackground}"
             Padding="10">
 
@@ -16,6 +15,7 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
+                <RowDefinition Height="25"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -56,7 +56,8 @@
                                  BorderThickness="0"
                                  Foreground="{DynamicResource PrimaryTextColor}"
                                  Background="{DynamicResource PrimaryBackground}"
-                                 Margin="0 0 10 0"/>
+                                 Margin="0 0 10 0"
+                                 KeyDown="OnKeyDownHandler"/>
 
                     </Grid>
 
@@ -70,11 +71,138 @@
 
             </Grid>
 
-            <!--Membership List-->
-            <ScrollViewer Grid.Row="1">
-                <WrapPanel x:Name="wrpMembers">
+            <!--DataGridView-->
+            <Grid Grid.Row="1"
+                  Margin="0 0 17 0">
 
-                </WrapPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1.35*"/>
+                        <ColumnDefinition Width="1.35*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="0.8*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!--ID-->
+                    <Border Grid.Column="0"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbId"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="ID"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--Client-->
+                    <Border Grid.Column="1"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbClientName"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="Client"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--Instructor-->
+                    <Border Grid.Column="2"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbInstructor"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="Instructor"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--StartDate-->
+                    <Border Grid.Column="3"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbStartDate"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="StartDate"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--EndDate-->
+                    <Border Grid.Column="4"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbEndDate"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="EndDate"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--Status-->
+                    <Border Grid.Column="5"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbStatus"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="Status"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <!--PaymentDate-->
+                    <Border Grid.Column="6"
+                            BorderThickness="1"
+                            Background="{DynamicResource PrimaryIconColor}"
+                            BorderBrush="{DynamicResource PrimaryTextBoxColor}">
+                        <Label x:Name="lbPaymentDate"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               Content="PaymentDate"
+                               FontFamily="Cascadia Mono"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                    </Border>
+
+                    <Border Grid.Column="7"></Border>
+
+                </Grid>
+
+            </Grid>
+
+            <!--Membership List-->
+            <ScrollViewer Grid.Row="2">
+                <StackPanel x:Name="wrpMembers">
+
+                </StackPanel>
             </ScrollViewer>
 
         </Grid>

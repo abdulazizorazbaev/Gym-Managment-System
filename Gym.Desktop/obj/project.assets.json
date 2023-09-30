@@ -312,11 +312,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gym.Desktop\\Gym.Desktop\\Gym.Desktop.csproj",
+      "projectUniqueName": "D:\\My Area\\Programming\\Bootcamp Result\\1st - 2nd  months (C# & WinForms & WPF)\\Gym.Desktop\\Gym.Desktop\\Gym.Desktop.csproj",
       "projectName": "Gym.Desktop",
-      "projectPath": "D:\\Gym.Desktop\\Gym.Desktop\\Gym.Desktop.csproj",
+      "projectPath": "D:\\My Area\\Programming\\Bootcamp Result\\1st - 2nd  months (C# & WinForms & WPF)\\Gym.Desktop\\Gym.Desktop\\Gym.Desktop.csproj",
       "packagesPath": "C:\\Users\\Hp Victus\\.nuget\\packages\\",
-      "outputPath": "D:\\Gym.Desktop\\Gym.Desktop\\obj\\",
+      "outputPath": "D:\\My Area\\Programming\\Bootcamp Result\\1st - 2nd  months (C# & WinForms & WPF)\\Gym.Desktop\\Gym.Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hp Victus\\AppData\\Roaming\\NuGet\\NuGet.Config",

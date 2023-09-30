@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="Add New Membership" Height="700" Width="500"
+        Title="Add New Membership" 
+        Height="700" Width="500"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         WindowStyle="None"
@@ -125,8 +126,8 @@
                                   IsReadOnly="True"
                                   Foreground="Gray" 
                                   DisplayMemberPath="FirstName"
-                                  SelectedValuePath="Id">
-                        </ComboBox>
+                                  SelectedValuePath="Id"/>
+                        
                     </Border>
 
                 </StackPanel>
@@ -197,7 +198,9 @@
                                           IsEditable="True"
                                           IsReadOnly="True"
                                           Foreground="Gray"
-                                          Background="{DynamicResource PrimaryComboBoxBackground}">
+                                          Background="{DynamicResource PrimaryComboBoxBackground}"
+                                          SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
+                                          SelectedValuePath="Content">
                                     <ComboBoxItem>Active</ComboBoxItem>
                                     <ComboBoxItem>Cancelled</ComboBoxItem>
                                     <ComboBoxItem>Pending</ComboBoxItem>

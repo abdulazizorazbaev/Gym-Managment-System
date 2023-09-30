@@ -1,8 +1,11 @@
 ﻿using Gym.Desktop.Entities.Memberships;
-using Gym.Desktop.Enums;
 using Gym.Desktop.Helpers;
+using Gym.Desktop.Interfaces.Clients;
+using Gym.Desktop.Interfaces.Instructors;
 using Gym.Desktop.Interfaces.Memberships;
 using Gym.Desktop.Interfaces.Packages;
+using Gym.Desktop.Repositories.Clients;
+using Gym.Desktop.Repositories.Instructors;
 using Gym.Desktop.Repositories.Memberships;
 using Gym.Desktop.Repositories.Packages;
 using System;
@@ -20,12 +23,16 @@ namespace Gym.Desktop.Windows.Members
     {
         private readonly IPackageRepository _packageRepository;
         private readonly IMembershipRepository _membershipRepository;
+        private readonly IInstructorRepository _instructorRepository;
+        private readonly IClientRepository _clientRepository;
         
         public MemberAddWindow()
         {
             InitializeComponent();
             this._packageRepository = new PackageRepository();
             this._membershipRepository = new MembershipRepository();
+            this._instructorRepository = new InstructorRepository();
+            this._clientRepository = new ClientRepository();
         }
 
         private void brMemberAddDrager_MouseDown(object sender, MouseButtonEventArgs e)
@@ -62,11 +69,11 @@ namespace Gym.Desktop.Windows.Members
             membership.PackageId = (long)cmbPackageList.SelectedValue;
             membership.ClientId = (long)cmbMembersList.SelectedValue;
             membership.InstructorId = (long)cmbInstructorsList.SelectedValue;
-            membership.Description = new TextRange(rbDescription.Document.ContentStart, rbDescription.Document.ContentEnd).Text;
+            membership.Description = new TextRange(rbDescription.Document.ContentStart, rbDescription.Document.ContentEnd).Text;        
 
-            ComboBoxItem ComboItem = (ComboBoxItem)cmbMembershipStatus.SelectedItem;
-            string name = ComboItem.Name;
-            
+            var selectedValue = ((ComboBoxItem)cmbMembershipStatus.SelectedItem).Content.ToString();
+            if (selectedValue is not null)
+                membership.MembershipStatus = selectedValue;
 
             if (dtpStartDate.SelectedDate is not null)
                 membership.StartDate = DateOnly.FromDateTime(dtpStartDate.SelectedDate.Value);
@@ -77,8 +84,8 @@ namespace Gym.Desktop.Windows.Members
             else membership.EndDate = DateOnly.FromDateTime(TimeHelper.GetDateTime());
 
             if (dtpPaymentDate.SelectedDate is not null)
-                membership.EndDate = DateOnly.FromDateTime(dtpPaymentDate.SelectedDate.Value);
-            else membership.EndDate = DateOnly.FromDateTime(TimeHelper.GetDateTime());
+                membership.PaymentDate = DateTime.Now;
+            else membership.PaymentDate = TimeHelper.GetDateTime();
 
             if (rbPaid.IsChecked!.Value) membership.IsPaid = true;
             else membership.IsPaid = false;
@@ -95,6 +102,20 @@ namespace Gym.Desktop.Windows.Members
                 PageSize = 100
             });
             cmbPackageList.ItemsSource = packages;
+
+            var instructors = await _instructorRepository.GetAllAsync(new Utilities.PaginationParams()
+            {
+                PageNumber = 1,
+                PageSize = 100
+            });
+            cmbInstructorsList.ItemsSource = instructors;
+
+            var clients = await _clientRepository.GetAllAsync(new Utilities.PaginationParams()
+            {
+                PageNumber = 1,
+                PageSize = 100
+            });
+            cmbMembersList.ItemsSource = clients;
         }
     }
 }

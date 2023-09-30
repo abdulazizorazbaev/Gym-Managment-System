@@ -1,14 +1,106 @@
 ﻿<Page x:Class="Gym.Desktop.Pages.AboutPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Gym.Desktop.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      Height="450" Width="800"
       Title="AboutPage">
+    <Border Background="{DynamicResource SecondaryBackground}"
+            Padding="10">
 
-    <Grid>
-        <Label FontSize="50" Content="About"/>
-    </Grid>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0"
+                  Margin="0 5 0 10">
+            </Grid>
+
+            <Grid Grid.Row="1">
+
+                <Border Padding="10 0">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0"
+                            VerticalAlignment="Center">
+                            <Label Content="Company name: Chechov Sport Club Ltd."
+                               FontFamily="Cascadia Mono"
+                               FontSize="20"
+                               Foreground="{DynamicResource PrimaryTextColor}"/>
+                        </Border>
+                        <Border Grid.Row="1"
+                            VerticalAlignment="Center">
+                            <Label Content="Founded at: September 10th, 2020"
+                               FontFamily="Cascadia Mono"
+                               FontSize="20"
+                               Foreground="{DynamicResource PrimaryTextColor}"/>
+                        </Border>
+                        <Border Grid.Row="2"
+                            VerticalAlignment="Center">
+                            <Label Content="Founded by: Anton Pavlovich Chechov"
+                               FontFamily="Cascadia Mono"
+                               FontSize="20"
+                               Foreground="{DynamicResource PrimaryTextColor}"/>
+                        </Border>
+                        <Border Grid.Row="3"
+                            VerticalAlignment="Center">
+                            <Label Content="Status: ☆☆☆☆☆ sport club in 21st century"
+                               FontFamily="Cascadia Mono"
+                               FontSize="20"
+                               Foreground="{DynamicResource PrimaryTextColor}"/>
+                        </Border>
+                        <Border Grid.Row="4"
+                            VerticalAlignment="Center">
+                            <Label Content="We are in social media 🠗"
+                               FontFamily="Cascadia Mono"
+                               FontSize="20"
+                               Foreground="{DynamicResource PrimaryTextColor}"/>
+                        </Border>
+                        <Grid Grid.Row="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0">
+                                <Image Source="/Assets/Images/facebook.png"
+                                   Cursor="Hand"/>
+                            </Border>
+                            <Border Grid.Column="1">
+                                <Image Source="/Assets/Images/instagram.png"
+                                   Cursor="Hand"/>
+                            </Border>
+                            <Border Grid.Column="2">
+                                <Image Source="/Assets/Images/whatsapp.png"
+                                   Cursor="Hand"/>
+                            </Border>
+                            <Border Grid.Column="3">
+                                <Image Source="/Assets/Images/telegram.png"
+                                   Cursor="Hand"/>
+                            </Border>
+                        </Grid>
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+        </Grid>
+
+    </Border>
 </Page>

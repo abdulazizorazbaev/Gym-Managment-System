@@ -1,21 +1,18 @@
 ﻿<UserControl x:Class="Gym.Desktop.Components.Packages.PackageViewUserControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Gym.Desktop.Components.Packages"
-             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" 
              Height="360" 
              Width="295"
              Margin="7">
     <Grid Background="Transparent"
-          Cursor="Hand"
-          x:Name="grMain"
-          MouseDown="grMain_MouseDown">
+          x:Name="grMain">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>            
         </Grid.RowDefinitions>
 
         <!--Picture of Package-->
@@ -34,6 +31,7 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
 
                 <!--Package Name-->
@@ -43,7 +41,7 @@
                         <Path Grid.Column="0"
                               Fill="{DynamicResource PrimaryPackageIconColor}"
                               Data="{DynamicResource star-icon}"
-                              Width="25" Height="25"/>
+                              Width="20" Height="20"/>
                     </Border>
                     <Label x:Name="lbPackageName"
                            FontSize="14"
@@ -54,6 +52,7 @@
                            Foreground="{DynamicResource PrimaryTextColor}"/>
                 </StackPanel>
 
+                <!--Package Price and Total Days-->
                 <StackPanel Grid.Row="1" Orientation="Horizontal"
                             HorizontalAlignment="Center">
                     <Grid>
@@ -68,7 +67,7 @@
                             <Border>
                                 <Path Fill="{DynamicResource PrimaryPackageIconColor}"
                                       Data="{DynamicResource money-icon}"
-                                      Width="23" Height="23"/>
+                                      Width="20" Height="20"/>
                             </Border>
                             <Label x:Name="lbPackagePrice"
                                    FontSize="12"
@@ -87,7 +86,7 @@
                             <Border>
                                 <Path Fill="{DynamicResource PrimaryPackageIconColor}"
                                       Data="{DynamicResource days-icon}"
-                                      Width="23" Height="23"/>
+                                      Width="20" Height="20"/>
                             </Border>
                             <Label x:Name="lbPackageTotalDays"
                                    FontSize="12"
@@ -104,13 +103,48 @@
 
                 <!--Description-->
                 <TextBlock x:Name="tbDescription"
-                           FontSize="13"
-                           Margin="0 10 0 0"
+                           FontSize="11"
+                           Margin="0 5 0 0"
                            FontFamily="Cascadia Mono"
                            Grid.Row="2"
                            TextWrapping="Wrap"
                            TextAlignment="Center"
                            Foreground="{DynamicResource PrimaryTextColor}"/>
+                
+                <!--Update and Delete-->
+                <Border Grid.Row="3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Delete-->
+                        <Border Grid.Column="0"                            
+                                MouseDown="deleteIcon_MouseDown"
+                                Cursor="Hand"
+                                Height="15" Width="15"
+                                HorizontalAlignment="Left"
+                                Background="{DynamicResource PrimaryBackground}">
+                            <Path Data="{DynamicResource delete-icon}"
+                                  Fill="{DynamicResource PrimaryIconColor}"
+                                  Stretch="Uniform"/>
+                        </Border>
+
+                        <!--Update-->
+                        <Border Grid.Column="1"
+                                Cursor="Hand"
+                                MouseDown="updateIcon_MouseDown"
+                                Height="15" Width="15"
+                                HorizontalAlignment="Right"
+                                Background="{DynamicResource PrimaryBackground}">
+                            <Path Data="{DynamicResource update-icon}"
+                                  Fill="{DynamicResource PrimaryIconColor}"
+                                  Stretch="Uniform"/>
+                        </Border>
+
+                    </Grid>
+                </Border>
 
             </Grid>
 

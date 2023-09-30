@@ -6,12 +6,14 @@
 
     <SolidColorBrush x:Key="PrimaryBorderColor" Color="#606784"></SolidColorBrush>
 
+    <!--ForeColors-->
     <SolidColorBrush x:Key="PrimaryTextColor" Color="#fff"></SolidColorBrush>
     <SolidColorBrush x:Key="SecondaryTextColor" Color="#272936"></SolidColorBrush>
 
     <SolidColorBrush x:Key="PrimaryIconColor" Color="#02ACC3"></SolidColorBrush>
 
     <SolidColorBrush x:Key="PrimaryTextBoxColor" Color="#4A4F63"></SolidColorBrush>
+    
 
     <SolidColorBrush x:Key="PrimaryDialogBackground" Color="#4A4F63"></SolidColorBrush>
     

@@ -1,14 +1,73 @@
 ﻿<Page x:Class="Gym.Desktop.Pages.FAQPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Gym.Desktop.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="FAQPage">
+      Title="DashboardPage"
+      Loaded="Page_Loaded">
+    <ScrollViewer>
+        <Border Background="{DynamicResource SecondaryBackground}"
+                Padding="10">
 
-    <Grid>
-        <Label FontSize="50" Content="FAQ"/>
-    </Grid>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--Search and Add-->
+                <Grid Grid.Row="0"
+                  Margin="0 5 0 10">
+                <Label Content="How Can We Help?"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontFamily="Cascadia Mono"
+                       FontSize="30"
+                       Foreground="{DynamicResource PrimaryTextColor}"
+                       FontWeight="Bold"/>
+            </Grid>
+
+                <Grid Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                           Content="Overview"                       
+                           HorizontalAlignment="Center"
+                           FontFamily="Cascadia Mono"
+                           FontSize="20"
+                           Foreground="{DynamicResource PrimaryTextColor}"
+                           FontWeight="Bold"/>
+                    <Border Grid.Row="1">
+                        <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   TextAlignment="Center"
+                                   FontFamily="Cascadia Mono"
+                                   FontSize="14"
+                                   TextWrapping="Wrap"
+                                   Foreground="{DynamicResource PrimaryTextColor}"
+                                   FontWeight="Bold">
+                            A gymnasium, also known as a gym, is an indoor location for athletics. 
+                            The word is derived from the ancient Greek term "gymnasium". 
+                            They are commonly found in athletic and fitness centers, and as activity 
+                            and learning spaces in educational institutions.
+                        </TextBlock>
+                    </Border>
+                </Grid>
+            </Grid>
+
+                <StackPanel x:Name="wrpFAQ" Grid.Row="2">
+
+                </StackPanel>
+
+            </Grid>
+
+        </Border>
+    </ScrollViewer>
 </Page>

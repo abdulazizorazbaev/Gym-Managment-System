@@ -1,18 +1,7 @@
 ﻿using Gym.Desktop.Pages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MaterialDesignThemes.Wpf;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Gym.Desktop
 {
@@ -108,6 +97,12 @@ namespace Gym.Desktop
         {
             AttendancePage attendancePage = new AttendancePage();
             PageNavigator.Content = attendancePage;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            DashboardPage dashboardPage1 = new DashboardPage();
+            PageNavigator.Content = dashboardPage1;
         }
     }
 }

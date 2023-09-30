@@ -72,7 +72,9 @@ namespace Gym.Desktop.Windows
                                             if (d == MessageBoxResult.OK)
                                             {
                                                 await Task.Delay(1000);
-                                                Application.Current.Shutdown();
+                                                MainWindow mainWindow = new MainWindow();
+                                                mainWindow.ShowDialog();
+                                                this.Close();
                                             }
                                         }
                                     }
@@ -87,6 +89,11 @@ namespace Gym.Desktop.Windows
                 }
             }
             else MessageBox.Show("Please, fill all fields correctly!");
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

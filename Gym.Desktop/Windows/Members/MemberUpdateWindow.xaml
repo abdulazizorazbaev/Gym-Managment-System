@@ -1,0 +1,302 @@
+﻿<Window x:Class="Gym.Desktop.Windows.Members.MemberUpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gym.Desktop.Windows.Members"
+        mc:Ignorable="d"
+        Title="Update Membership" 
+        Height="700" Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="TitleLabel" TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0 5"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="{DynamicResource PrimaryDialogBackground}">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Header Dialog-->
+            <Grid Grid.Row="0"
+                  Background="{DynamicResource PrimaryBackground}">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+
+
+                <!--Logo-->
+                <Border Grid.Column="0"
+                        Background="{DynamicResource PrimaryBackground}"
+                        x:Name="brMemberUpdateDrager"
+                        MouseDown="brMemberUpdateDrager_MouseDown"
+                        Cursor="ScrollAll">
+                </Border>
+
+                <!--Exit Button-->
+                <StackPanel Grid.Column="1"
+                            Background="{DynamicResource PrimaryBackground}"
+                            HorizontalAlignment="Right">
+
+                    <Button x:Name="btnMemberUpdateExit" 
+                            Click="btnMemberUpdateExit_Click" 
+                            Style="{DynamicResource ExitButton}"/>
+
+                </StackPanel>
+
+            </Grid>
+
+            <StackPanel Orientation="Vertical"
+                        Margin="20"
+                        Grid.Row="1">
+
+                <!--Package Name List From Packages-->
+                <StackPanel>
+
+                    <Label Content="Package Types"
+                           Style="{DynamicResource TitleLabel}"/>
+                    <Border Background="{DynamicResource PrimaryComboBoxBackground}"
+                            Height="30">
+                        <ComboBox x:Name="cmbPackageList"
+                                  FontFamily="Cascadia Mono"
+                                  FontSize="16"
+                                  FontWeight="SemiBold"
+                                  Padding="10 5"
+                                  Text="Please select ..."
+                                  IsEditable="True" 
+                                  IsReadOnly="True"
+                                  Foreground="Gray"
+                                  DisplayMemberPath="PackageName"
+                                  SelectedValuePath="Id">
+                        </ComboBox>
+                    </Border>
+
+                </StackPanel>
+
+                <!--Client Name List From Clients-->
+                <StackPanel>
+
+                    <Label Content="Member's Name"
+                           Style="{DynamicResource TitleLabel}"/>
+                    <Border Background="{DynamicResource PrimaryComboBoxBackground}"
+                            Height="30">
+                        <ComboBox x:Name="cmbMembersList"
+                                  FontFamily="Cascadia Mono"
+                                  FontSize="16"
+                                  FontWeight="SemiBold"
+                                  Padding="10 5"
+                                  Text="Please select ..."
+                                  IsEditable="True" 
+                                  IsReadOnly="True"
+                                  Foreground="Gray" 
+                                  DisplayMemberPath="FirstName"
+                                  SelectedValuePath="Id">
+                        </ComboBox>
+                    </Border>
+
+                </StackPanel>
+
+                <!--Instructor Name List From Instructors-->
+                <StackPanel>
+
+                    <Label Content="Instructor's Name"
+                           Style="{DynamicResource TitleLabel}"/>
+                    <Border Background="{DynamicResource PrimaryComboBoxBackground}"
+                            Height="30">
+                        <ComboBox x:Name="cmbInstructorsList"
+                                  FontFamily="Cascadia Mono"
+                                  FontSize="16"
+                                  FontWeight="SemiBold"
+                                  Padding="10 5"
+                                  Text="Please select ..."
+                                  IsEditable="True" 
+                                  IsReadOnly="True"
+                                  Foreground="Gray" 
+                                  DisplayMemberPath="FirstName"
+                                  SelectedValuePath="Id"/>
+
+                    </Border>
+
+                </StackPanel>
+
+                <!--StartDate and EndDate-->
+                <Border>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Start Date-->
+                        <StackPanel Grid.Column="0">
+                            <Label Content="Start Date"
+                                   Style="{DynamicResource TitleLabel}"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                    Height="40">
+                                <DatePicker x:Name="dtpStartDate"
+                                            Style="{DynamicResource FormDatePicker}"/>
+                            </Border>
+                        </StackPanel>
+
+                        <Border Grid.Column="1">
+
+                        </Border>
+
+                        <!--End Date-->
+                        <StackPanel Grid.Column="2">
+                            <Label Content="End Date"
+                                   Style="{DynamicResource TitleLabel}"
+                                   VerticalAlignment="Center"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                    Height="40">
+                                <DatePicker x:Name="dtpEndDate"
+                                            Style="{DynamicResource FormDatePicker}"/>
+                            </Border>
+                        </StackPanel>
+
+                    </Grid>
+
+                </Border>
+
+                <!--MembershipStatus and PaymentDate-->
+                <Border>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Membership Status-->
+                        <StackPanel Grid.Column="0">
+                            <Label Content="Membership Status"
+                                   Style="{DynamicResource TitleLabel}"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                    Height="40">
+                                <ComboBox x:Name="cmbMembershipStatus"
+                                          FontFamily="Cascadia Mono"
+                                          FontSize="16"
+                                          FontWeight="SemiBold"
+                                          Padding="10 5"
+                                          Text="Please select ..."
+                                          IsEditable="True"
+                                          IsReadOnly="True"
+                                          Foreground="Gray"
+                                          Background="{DynamicResource PrimaryComboBoxBackground}"
+                                          SelectedValue="{Binding VMselectedOption, Mode=TwoWay}" 
+                                          SelectedValuePath="Content">
+                                    <ComboBoxItem>Active</ComboBoxItem>
+                                    <ComboBoxItem>Cancelled</ComboBoxItem>
+                                    <ComboBoxItem>Pending</ComboBoxItem>
+                                    <ComboBoxItem>Expired</ComboBoxItem>
+                                    <ComboBoxItem>Suspended</ComboBoxItem>
+                                    <ComboBoxItem>Defaulted</ComboBoxItem>
+                                </ComboBox>
+                            </Border>
+                        </StackPanel>
+
+                        <Border Grid.Column="1">
+
+                        </Border>
+
+                        <!--Payment Date-->
+                        <StackPanel Grid.Column="2">
+                            <Label Content="Payment Date"
+                                   Style="{DynamicResource TitleLabel}"
+                                   VerticalAlignment="Center"/>
+                            <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                                    Height="40">
+                                <DatePicker x:Name="dtpPaymentDate"
+                                            Style="{DynamicResource FormDatePicker}"/>
+                            </Border>
+                        </StackPanel>
+
+                    </Grid>
+
+                </Border>
+
+                <!--Payment Status-->
+                <StackPanel>
+                    <Label Content="Payment Status" Style="{DynamicResource TitleLabel}"/>
+                    <Grid Width="200" HorizontalAlignment="Left">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Grid.Column="0"
+                                     x:Name="rbPaid"
+                                     Content="Paid"
+                                     FontSize="16"
+                                     Cursor="Hand"
+                                     IsChecked="False"
+                                     VerticalAlignment="Center"
+                                     VerticalContentAlignment="Center"
+                                     Foreground="{DynamicResource PrimaryTextColor}"/>
+                        <RadioButton Grid.Column="1"
+                                     x:Name="rbUnpaid"
+                                     Content="Unpaid"
+                                     Cursor="Hand"
+                                     IsChecked="True"
+                                     FontSize="16"
+                                     VerticalAlignment="Center"
+                                     VerticalContentAlignment="Center"
+                                     Foreground="{DynamicResource PrimaryTextColor}"/>
+                    </Grid>
+                </StackPanel>
+
+                <!--Description-->
+                <Label Content="Description"
+                       Style="{DynamicResource TitleLabel}"/>
+                <Border Background="{DynamicResource PrimaryTextBoxColor}"
+                        Height="100">
+
+                    <!--Description RichTextBox-->
+                    <RichTextBox x:Name="rbDescription"
+                                 Padding="10"
+                                 FontSize="16"
+                                 FontFamily="Cascadia Mono"
+                                 BorderThickness="0"
+                                 Foreground="{DynamicResource PrimaryTextColor}"
+                                 Background="{DynamicResource PrimaryBackground}"
+                                 GotFocus="RichTextBox_GotFocus">
+                        <RichTextBox.Document>
+                            <FlowDocument>
+                                <FlowDocument.Blocks>
+                                    <Paragraph Foreground="Gray">
+                                        Type here something...
+                                    </Paragraph>
+                                </FlowDocument.Blocks>
+                            </FlowDocument>
+                        </RichTextBox.Document>
+                    </RichTextBox>
+
+                </Border>
+
+                <!--Save Button-->
+                <Button Content="Update"
+                        x:Name="btnUpdate"
+                        Margin="0 20 0 10"
+                        Click="btnUpdate_Click"/>
+
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Window>

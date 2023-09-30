@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\obj\Debug\net7.0-windows\
 Gym.Desktop
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\My Area\Programming\Bootcamp Result\1st month (C#)\Gym.Desktop\Gym.Desktop\App.xaml
-241486199851
+D:\My Area\Programming\Bootcamp Result\1st - 2nd  months (C# & WinForms & WPF)\Gym.Desktop\Gym.Desktop\App.xaml
+36-1727476690
 
-52-1584554979
+68241170140
 2041633185889
-Assets\Icons\Icons.xaml;Components\Instructors\InstructorViewUserControl.xaml;Components\Packages\PackageChipUserControl.xaml;Components\Packages\PackageViewUserControl.xaml;MainWindow.xaml;Pages\AboutPage.xaml;Pages\AttendancePage.xaml;Pages\ClientsPage.xaml;Pages\DashboardPage.xaml;Pages\FAQPage.xaml;Pages\InstructorsPage.xaml;Pages\MembersPage.xaml;Pages\PackagesPage.xaml;Pages\PaymentsPage.xaml;Pages\SessionsPage.xaml;Styles\ButtonStyles.xaml;Styles\ComboBoxStyles.xaml;Styles\DatePickerStyles.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Windows\Instructors\InstructorAddWindow.xaml;Windows\LoginWindow.xaml;Windows\Members\MemberAddWindow.xaml;Windows\Packages\PackageAddWindow.xaml;
+Assets\Icons\Icons.xaml;Components\Clients\ClientViewUserControl.xaml;Components\Dashboard\Dashboard2ViewUserControl.xaml;Components\Dashboard\Dashboard3ViewUserControl.xaml;Components\Dashboard\DashboardViewUserControl.xaml;Components\FAQ\FAQViewUserControl.xaml;Components\Instructors\InstructorViewUserControl.xaml;Components\Memberships\MembershipViewUserControl.xaml;Components\Packages\PackageChipUserControl.xaml;Components\Packages\PackageViewUserControl.xaml;Components\Payments\PaymentViewUserControl.xaml;MainWindow.xaml;Pages\AboutPage.xaml;Pages\AttendancePage.xaml;Pages\ClientsPage.xaml;Pages\DashboardPage.xaml;Pages\FAQPage.xaml;Pages\InstructorsPage.xaml;Pages\MembersPage.xaml;Pages\PackagesPage.xaml;Pages\PaymentsPage.xaml;Pages\SessionsPage.xaml;Styles\ButtonStyles.xaml;Styles\ComboBoxStyles.xaml;Styles\DatePickerStyles.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Windows\Clients\ClientAddWindow.xaml;Windows\Clients\ClientUpdateWindow.xaml;Windows\Instructors\InstructorAddWindow.xaml;Windows\Instructors\InstructorUpdateWindow.xaml;Windows\LoginWindow.xaml;Windows\Members\MemberAddWindow.xaml;Windows\Members\MemberUpdateWindow.xaml;Windows\Packages\PackageAddWindow.xaml;Windows\Packages\PackageUpdateWindow.xaml;
 
 False
 

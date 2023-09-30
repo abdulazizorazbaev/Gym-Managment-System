@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="Gym.Desktop.Components.FAQ.FAQViewUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             Margin="0 0 0 20">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              Background="{DynamicResource PrimaryBackground}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Question"
+                   Margin="10"
+                   Grid.Column="0"
+                   x:Name="lbQuestion"
+                   FontFamily="Cascadia Mono"
+                   FontSize="18"
+                   FontWeight="SemiBold"
+                   Foreground="{DynamicResource PrimaryTextColor}"
+                   VerticalAlignment="Center"/>
+            <Border Grid.Column="1"
+                    MouseDown="hideShowBtn1_MouseDown"
+                    Cursor="Hand"
+                    Height="10" Width="10"
+                    Margin="0 10 20 10"
+                    Background="Transparent"
+                    x:Name="first"
+                    Visibility="Visible"                  
+                    HorizontalAlignment="Right">
+                <Path Data="{DynamicResource x}"                  
+                      Fill="{DynamicResource PrimaryIconColor}"
+                      Stretch="Uniform"/>
+            </Border>
+            <Border Grid.Column="1"
+                    MouseDown="hideShowBtn2_MouseDown"
+                    Width="10"
+                    Height="10"
+                    Margin="0 10 20 10"
+                    Background="Transparent"                                         
+                    x:Name="second"
+                    Visibility="Hidden"
+                    HorizontalAlignment="Right">
+                <Path Data="{DynamicResource border}"
+                      Fill="{DynamicResource PrimaryIconColor}"
+                      Stretch="Uniform"/>
+            </Border>
+        </Grid>
+        <Border Grid.Row="1"
+                Padding="10"
+                Background="#3D4154"
+                x:Name="borderAnswer">
+            <TextBlock TextWrapping="Wrap"
+                       x:Name="textbAnswer"
+                       FontFamily="Cascadia Mono"
+                       FontSize="14"
+                       Foreground="{DynamicResource PrimaryTextColor}"
+                       VerticalAlignment="Center">
+            </TextBlock>
+        </Border>
+
+    </Grid>
+</UserControl>

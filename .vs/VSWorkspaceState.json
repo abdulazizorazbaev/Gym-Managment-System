@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Gym.Desktop"
+    "\\Gym.Desktop",
+    "\\Gym.Desktop\\Pages"
   ],
-  "SelectedNode": "\\Gym.Desktop.sln",
+  "SelectedNode": "\\Gym.Desktop\\Pages\\InstructorsPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

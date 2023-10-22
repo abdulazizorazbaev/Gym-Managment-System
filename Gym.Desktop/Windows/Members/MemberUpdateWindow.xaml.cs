@@ -37,7 +37,7 @@ namespace Gym.Desktop.Windows.Members
             _packageRepository = new PackageRepository();
         }
 
-        public async void SetData(Membership membership)
+        public void SetData(Membership membership)
         {
             //List<Client> clients = await _clientRepository.GetAllClientsAsync();
             //foreach (Client client in clients)
